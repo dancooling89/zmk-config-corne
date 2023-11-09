@@ -22,7 +22,7 @@
 &trans      &kp Q  &kp W           &kp F           &kp P            &kp B          &kp J            &kp L            &kp U           &kp Y           &kp SEMICOLON  &trans
 &kp ESCAPE  &kp A  &mt LEFT_ALT R  &mt LCTRL S     &mt LEFT_META T  &kp G          &kp M            &mt LEFT_META N  &mt LCTRL E     &mt LEFT_ALT I  &kp O          &kp RETURN
 &trans      &kp Z  &kp X           &kp C           &kp D            &kp V          &kp K            &kp H            &kp COMMA       &kp DOT         &kp FSLH       &trans
-                                   &kp LEFT_SHIFT  &lt 3 TAB        &lt 1 SPACE    &lt 2 BACKSPACE  &lt 3 DELETE     &kp LEFT_SHIFT
+                                   &kp LEFT_SHIFT  &lt 3 TAB        &lt 1 SPACE    &lt 2 BACKSPACE  &lt 4 DELETE     &kp LEFT_SHIFT
             >;
         };
 
