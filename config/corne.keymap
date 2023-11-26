@@ -76,10 +76,10 @@
 
         layer_4 {
             bindings = <
-&kp PIPE        &kp AMPERSAND    &kp GRAVE             &kp SQT                &kp DOUBLE_QUOTES  &none          &none   &none   &none     &none      &none         &none
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &kp AT_SIGN    &none   &none   &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &none
-&kp BACKSLASH   &kp SLASH        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR         &none          &none   &none   &none     &none      &none         &none
-                                                       &trans                 &kp LS(NUMBER_3)   &kp TILDE      &trans  &trans  &trans
+&kp LS(NON_US_BACKSLASH)  &kp AMPERSAND    &kp GRAVE             &kp SQT                &kp AT            &none                &none   &none   &none     &none      &none         &none
+&kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp DOUBLE_QUOTES    &none   &none   &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &none
+&kp NON_US_BACKSLASH      &kp SLASH        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR        &none                &none   &none   &none     &none      &none         &none
+                                                                 &trans                 &kp LS(NUMBER_3)  &kp TILDE            &trans  &trans  &trans
             >;
         };
     };
