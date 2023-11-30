@@ -22,7 +22,7 @@
 
         WASD {
             bindings = <&to 5>;
-            key-positions = <38 39 37 40 38>;
+            key-positions = <17 18>;
             layers = <0 2 3 1 4>;
         };
     };
