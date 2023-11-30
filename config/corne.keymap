@@ -21,7 +21,7 @@
         compatible = "zmk,combos";
 
         WASD {
-            bindings = <&tog 5>;
+            bindings = <&to 5>;
             key-positions = <38 39 37 40 38>;
             layers = <0 2 3 1 4>;
         };
