@@ -95,10 +95,10 @@
 
         layer_5 {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E   &kp R    &none         &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D   &kp F    &kp RETURN    &none  &none  &none  &none  &none  &none
-&kp LCTRL       &kp Z  &kp X  &kp C   &kp V    &none         &none  &none  &none  &none  &none  &none
-                              &trans  &kp TAB  &kp ESCAPE    &to 0  &none  &none
+&kp TAB     &kp Q         &kp W         &kp P         &kp F         &none           &none  &none  &none  &none  &none  &none
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp RETURN      &none  &none  &none  &none  &none  &none
+&kp LCTRL   &kp I         &kp C         &kp S         &kp M         &none           &none  &none  &none  &none  &none  &none
+                                        &trans        &kp TAB       &kp NUMBER_4    &to 0  &none  &none
             >;
         };
     };
