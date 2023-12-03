@@ -28,7 +28,7 @@
 
         GrimDawn {
             bindings = <&to 6>;
-            key-positions = <17 6>;
+            key-positions = <17 7>;
             layers = <0 2 3 1 4>;
         };
     };
