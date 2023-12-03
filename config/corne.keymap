@@ -19,18 +19,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        WASD {
-            bindings = <&to 5>;
-            key-positions = <17 18>;
-            layers = <0 2 3 1 4>;
-        };
-
-        GrimDawn {
-            bindings = <&to 6>;
-            key-positions = <17 7>;
-            layers = <0 2 3 1 4>;
-        };
     };
 
     keymap {
@@ -45,7 +33,7 @@
 
             bindings = <
 &kp Q  &kp W           &kp F        &kp P           &kp B        &none           &none         &kp J            &kp L           &kp U        &kp Y           &kp SEMICOLON
-&kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LGUI T      &kp G        &kp TAB         &kp DELETE    &kp M            &mt LGUI N      &mt LCTRL E  &mt LEFT_ALT I  &kp O
+&kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LGUI T      &kp G        &lt 5 TAB       &kp DELETE    &kp M            &mt LGUI N      &mt LCTRL E  &mt LEFT_ALT I  &kp O
 &kp Z  &kp X           &kp C        &kp D           &kp V        &none           &none         &kp K            &kp H           &kp COMMA    &kp PERIOD      &kp SLASH
                                     &kp LEFT_SHIFT  &lt 1 SPACE  &lt 3 ESCAPE    &lt 4 RETURN  &lt 2 BACKSPACE  &kp LEFT_SHIFT
             >;
@@ -99,6 +87,15 @@
             >;
         };
 
+        layer_8 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &to 6  &to 8  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
+            >;
+        };
+
         layer_5 {
             bindings = <
 &kp TAB     &kp Q         &kp W         &kp P         &kp F         &none           &none  &none  &none  &none  &none  &none
@@ -113,7 +110,7 @@
 &kp TAB     &kp N7        &kp N8        &kp N9        &kp E   &none        &none  &none  &none  &none  &none  &none
 &kp ESCAPE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp M   &none        &none  &none  &none  &none  &none  &none
 &kp LCTRL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp R   &none        &none  &none  &none  &none  &none  &none
-                                        &mo 7         &kp N0  &kp SPACE    &to 0  &none  &none
+                                        &mo 8         &kp N0  &kp SPACE    &to 0  &none  &none
             >;
         };
 
