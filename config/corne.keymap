@@ -25,6 +25,12 @@
             key-positions = <17 18>;
             layers = <0 2 3 1 4>;
         };
+
+        GrimDawn {
+            bindings = <&to 5>;
+            key-positions = <17 6>;
+            layers = <0 2 3 1 4>;
+        };
     };
 
     keymap {
@@ -99,6 +105,24 @@
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp RETURN      &none  &none  &none  &none  &none  &none
 &kp LCTRL   &kp I         &kp C         &kp S         &kp M         &none           &none  &none  &none  &none  &none  &none
                                         &trans        &kp TAB       &kp NUMBER_4    &to 0  &none  &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp TAB     &kp N7        &kp N8        &kp N9        &kp E   &none        &none  &none  &none  &none  &none  &none
+&kp ESCAPE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp M   &none        &none  &none  &none  &none  &none  &none
+&kp LCTRL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp R   &none        &none  &none  &none  &none  &none  &none
+                                        &mo 7         &kp N0  &kp SPACE    &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &none
+&kp O  &kp C  &kp S  &kp I   &kp J  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &none
+                     &trans  &none  &none    &none  &none  &none
             >;
         };
     };
