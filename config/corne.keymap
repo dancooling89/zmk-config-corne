@@ -24,7 +24,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -37,9 +37,11 @@
 &kp Z  &kp X           &kp C        &kp D           &kp V        &none           &none         &kp K            &kp H           &kp COMMA    &kp PERIOD      &kp SLASH
                                     &kp LEFT_SHIFT  &lt 1 SPACE  &lt 3 ESCAPE    &lt 4 RETURN  &lt 2 BACKSPACE  &kp LEFT_SHIFT
             >;
+
+            label = "Base Layer";
         };
 
-        lower_layer {
+        arrows {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -52,9 +54,11 @@
 &none  &none         &none      &none     &none   &none     &none   &none   &none     &none     &none         &none
                                 &trans    &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Arrow Keys";
         };
 
-        raise_layer {
+        num_keys {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -67,60 +71,74 @@
 &kp TILDE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none        &none   &none   &none     &none      &none     &none
                                          &trans        &kp N0        &kp EQUAL    &trans  &trans  &trans
             >;
+
+            label = "Number keys";
         };
 
-        layer_3 {
+        fn_keys {
             bindings = <
 &none  &none     &none      &none     &none   &none     &none   &none   &kp F7  &kp F8  &kp F9  &kp F12
 &none  &kp LALT  &kp LCTRL  &kp LGUI  &none   &none     &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
 &none  &none     &none      &none     &none   &none     &none   &none   &kp F1  &kp F2  &kp F3  &kp F10
                             &trans    &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Function keys";
         };
 
-        layer_4 {
+        symbol_keys {
             bindings = <
 &kp LS(NON_US_BACKSLASH)  &kp AMPERSAND    &kp GRAVE             &kp SQT                &kp AT            &none                &none   &none   &none     &none      &none         &none
 &kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp DOUBLE_QUOTES    &none   &none   &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &none
 &kp NON_US_BACKSLASH      &kp SLASH        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR        &none                &none   &none   &none     &none      &none         &none
                                                                  &trans                 &kp LS(NUMBER_3)  &kp LS(BACKSLASH)    &trans  &trans  &trans
             >;
+
+            label = "Symbol keys";
         };
 
-        layer_8 {
+        gaming_layers {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &to 6  &to 8  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &to 6  &to 7  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
+
+            label = "Gaming layers";
         };
 
-        layer_5 {
+        last_epoch {
             bindings = <
 &kp TAB     &kp Q         &kp W         &kp P         &kp F         &none           &none  &none  &none  &none  &none  &none
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp RETURN      &none  &none  &none  &none  &none  &none
 &kp LCTRL   &kp I         &kp C         &kp S         &kp M         &none           &none  &none  &none  &none  &none  &none
                                         &trans        &kp TAB       &kp NUMBER_4    &to 0  &none  &none
             >;
+
+            label = "Last epoch";
         };
 
-        layer_6 {
+        grim_dawn_1 {
             bindings = <
 &kp TAB     &kp N7        &kp N8        &kp N9        &kp E   &none        &none  &none  &none  &none  &none  &none
 &kp ESCAPE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp M   &none        &none  &none  &none  &none  &none  &none
 &kp LCTRL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp R   &none        &none  &none  &none  &none  &none  &none
                                         &mo 8         &kp N0  &kp SPACE    &to 0  &none  &none
             >;
+
+            label = "Grim dawn 1";
         };
 
-        layer_7 {
+        grim_dawn_2 {
             bindings = <
 &none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &none
 &kp O  &kp C  &kp S  &kp I   &kp J  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &none
-                     &trans  &none  &none    &none  &none  &none
+                     &trans  &none  &none    &to 0  &none  &none
             >;
+
+            label = "Grim dawn 2";
         };
     };
 };
